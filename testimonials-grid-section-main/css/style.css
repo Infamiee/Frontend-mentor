@@ -27,7 +27,6 @@ body {
 .testimonies .testimony {
   border: 1px solid transparent;
   border-radius: 10px;
-  overflow: hidden;
   margin-bottom: 1.25em;
   padding: 1.35em;
   background: white;
@@ -92,12 +91,25 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
-    height: 60%;
     width: 75%;
+    height: 75%;
   }
   .testimonies .testimony {
     margin: 0;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
+    justify-content: space-between;
+  }
+  .testimonies .testimony .personal-data {
+    font-size: 2.1vh;
+  }
+  .testimonies .testimony .personal-data .face-img {
+    height: 40px;
+  }
+  .testimonies .testimony .main-text {
+    font-size: 2.5vh;
+  }
+  .testimonies .testimony .quote {
+    font-size: 1.8vh;
   }
 
   .testimony.testimony.theme-1 {
