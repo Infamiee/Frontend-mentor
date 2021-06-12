@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.05em;
+  line-height: 1.1em;
+  background: #ecf2f8;
+  overflow: scroll;
+}
+
+.testimonies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3em 1em;
+}
+.testimonies .testimony {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.25em;
+  padding: 1.35em;
+  background: white;
+}
+.testimonies .testimony .personal-data {
+  display: flex;
+  align-items: center;
+}
+.testimonies .testimony .personal-data .face-img {
+  border-radius: 50%;
+  max-height: 40px;
+  margin-right: 1em;
+}
+.testimonies .testimony .personal-data .status {
+  opacity: 0.5;
+}
+.testimonies .testimony .main-text {
+  margin: 1em 0;
+  font-weight: bolder;
+  line-height: 1.1em;
+  font-size: 23px;
+}
+.testimonies .testimony .quote {
+  opacity: 0.7;
+}
+
+.testimony.theme-1 {
+  background: #7541c8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+.testimony.theme-1 .face-img {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.testimony.theme-2 {
+  background: #48556a;
+  color: white;
+}
+.testimony.theme-2 .face-img {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.testimony.theme-3 {
+  color: #48556a;
+}
+
+.testimony.theme-4 {
+  background: #19212e;
+  color: #cfcfcf;
+}
+.testimony.theme-4 .face-img {
+  border: 2px solid #7541c8;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    height: 60%;
+    width: 75%;
+  }
+  .testimonies .testimony {
+    margin: 0;
+    padding: 2em;
+  }
+
+  .testimony.testimony.theme-1 {
+    background-size: 150px;
+    background-position-x: 75%;
+  }
+
+  .testimony.left-2-columns {
+    grid-column: 1/3;
+  }
+
+  .testimony.right-whole-row {
+    grid-row: 1/3;
+    grid-column: 4/5;
+  }
+
+  .testimony.middle-2-col {
+    grid-column: 2/4;
+  }
+}/*# sourceMappingURL=style.css.map */
